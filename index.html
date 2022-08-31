@@ -2,19 +2,85 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Jack's Website</title> 
+        <title>Jack's Website</title>
+        <style>
+            body {
+                background: rgb(255, 145, 0);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+              max-width: 800px;
+                margin: auto;
+            }
+         
+            /* navigation menu */
+            nav {
+                background: rgb(41, 71, 239);
+               margin: 0 auto;
+                display: flex;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 100px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: white;
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+         
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+                border-radius: 100px;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 400px;
+                border-radius: 100px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            #interests {
+                border: 4px silver ridge;
+                padding: 8px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+         </style> 
     </head>
     
     <body>
     <!--Content-->
-        <div>
-            <nav>
-                <h1>My webstite</h1> 
+        <div id="all-contents">
+            <nav id="nav-ul" >
+                <h1>My Webstite</h1> 
                 <u1>
-                    <li>
+                    <li class="nav-li">
                         <a href="index.html"> Home </a>
                     </li>
-                    <li>
+                    <li class="nav-li">
                         <a href="portfolio.html"> Portfolio </a>
 
                     </li>
@@ -23,16 +89,16 @@
 
             <main>
                 <!--Sidebar-->
-                <div>
-                <img src=https://cdn.vox-cdn.com/thumbor/qiHAl0XvcQbhUe3NMK2iBZgiYaA=/0x0:2855x1562/1200x800/filters:focal(1185x131:1641x587)/cdn.vox-cdn.com/uploads/chorus_image/image/71249848/Screen_Shot_2022_08_16_at_12.11.20_PM.0.png width="400"
+                <div class="sidebar">
+                <img class="sidebar-img" src=https://cdn.vox-cdn.com/thumbor/qiHAl0XvcQbhUe3NMK2iBZgiYaA=/0x0:2855x1562/1200x800/filters:focal(1185x131:1641x587)/cdn.vox-cdn.com/uploads/chorus_image/image/71249848/Screen_Shot_2022_08_16_at_12.11.20_PM.0.png>
                 </div>
 
                 <!--Content Section-->
-                <div>
+                <div class="content">
                 <h2>Jack Ehlinger</h2>
                 <p>Student at Mandeville High School</p>
                 <!--Interests section-->
-                <div>
+                <div id="interests">
                     <h3>Interests:</h3>
                     <u1>
                         <li>Theater</li>
