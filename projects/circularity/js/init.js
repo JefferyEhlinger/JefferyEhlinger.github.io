@@ -87,6 +87,9 @@ var init = function (window) {
                 circle.y = 0;
             }
 
+            if (circle.x > canvas.length){
+                circle.x = 0;
+            }
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
